@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if player_in_secret:
-		if layer_alpha > 0.3:
+		if layer_alpha > 0.001:
 			# Animate the layer transparency.
 			layer_alpha = move_toward(layer_alpha, 0.3, delta)
 			self_modulate = Color(1, 1, 1, layer_alpha)
